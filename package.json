@@ -1,0 +1,25 @@
+{
+  "name": "raml2schema",
+  "version": "0.1.0",
+  "description": "Convert RAML Types to Schema Draft 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rankun203/raml2schema.git"
+  },
+  "keywords": [
+    "raml",
+    "schema",
+    "await",
+    "es6"
+  ],
+  "author": "Kun Ran <rankun203@gmail.com> (http://blog.rankun.org)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rankun203/raml2schema/issues"
+  },
+  "homepage": "https://github.com/rankun203/raml2schema#readme"
+}
