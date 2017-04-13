@@ -1,5 +1,5 @@
 # raml2schema
-Convert raml 1.0 to Schema Draft 4
+Convert raml 1.0 Types to Schema Draft 4 schemas
 
 ### Ability
 
