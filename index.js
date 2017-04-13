@@ -1,7 +1,4 @@
 /**
- * Copyright (C) LodeStreams - All Rights Reserved
- * Unauthorized copying of this file, via any medium is strictly prohibited
- * Proprietary and confidential
  * Written by Kun R <kun@lodestreams.com>, Thu Apr 13 2017
  */
 
