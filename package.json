@@ -1,6 +1,6 @@
 {
   "name": "raml2schema",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Convert RAML Types to Schema Draft 4",
   "main": "index.js",
   "scripts": {
