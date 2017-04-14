@@ -23,6 +23,11 @@ class Schema {
     return this;
   }
 
+  setAdditionalProperties(additionalProperties) {
+    this.additionalProperties = additionalProperties;
+    return this;
+  }
+
   static mapType(ramlType) {
     if (ramlType === 'integer') return 'number';
 
@@ -63,8 +68,9 @@ class Schema {
     return {
       title: this.title,
       type: this.type,
+      required: this.required,
       properties: this.properties,
-      required: this.required
+      additionalProperties: this.additionalProperties
     };
   }
 }
@@ -76,6 +82,7 @@ async function convert(typeObj) {
 
   return schema.setTitle(typeObj.name)
     .setType(typeObj.type)
+    .setAdditionalProperties(typeObj.additionalProperties)
     .setProperties(properties.properties)
     .setRequired(properties.required)
     .toJSON();
