@@ -28,6 +28,16 @@ class Schema {
     return this;
   }
 
+  setMinimum(minimum) {
+    this.minimum = minimum;
+    return this;
+  }
+
+  setMaximum(maximum) {
+    this.maximum = maximum;
+    return this;
+  }
+
   static mapType(ramlType) {
     if (ramlType === 'integer') return 'number';
 
@@ -50,7 +60,9 @@ class Schema {
         type: Schema.mapType(ramlProperty.type),
         description: ramlProperty.description,
         enum: ramlProperty.enum,
-        pattern: ramlProperty.pattern
+        pattern: ramlProperty.pattern,
+        minimum: ramlProperty.minimum,
+        maximum: ramlProperty.maximum
       };
 
       properties[ramlProperty.key] = property;
